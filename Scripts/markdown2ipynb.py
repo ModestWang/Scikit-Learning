@@ -1,5 +1,11 @@
 # =*= coding: utf-8 -*-
 
+"""
+To create an **ipynb** just type:
+要创建一个 **ipynb** 文件,请使用以下命令:  
+    python markdown2ipynb.py --out sample\python100tips.ipynb sample\python100tips.md
+"""
+
 """Very simple markdown to IPython notebook converter.
 _markdown2ipynb_ 用于将markdown 文件转变为 _IPython notebooks_ 的 .ipynb 格式文件
 
@@ -108,8 +114,3 @@ if __name__ == "__main__":
     nb = IPyNB(args.mdfile, name)
     nb.write(args.out)
     print("view this output file: " + args.out.name)
-
-"""
-To create an **ipynb** just type:
-要创建一个 **ipynb** 文件,请使用以下命令:  python markdown2ipynb.py --out sample\python100tips.ipynb sample\python100tips.md
-"""
